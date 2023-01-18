@@ -1,0 +1,15 @@
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\bin\Debug\net6.0\Task5.exe
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\bin\Debug\net6.0\Task5.deps.json
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\bin\Debug\net6.0\Task5.runtimeconfig.json
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\bin\Debug\net6.0\Task5.dll
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\bin\Debug\net6.0\Task5.pdb
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.csproj.AssemblyReference.cache
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.AssemblyInfoInputs.cache
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.AssemblyInfo.cs
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.csproj.CoreCompileInputs.cache
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.dll
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\refint\Task5.dll
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.pdb
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\Task5.genruntimeconfig.cache
+C:\Users\muhammed.ka\source\repos\ConsoleAppCore\Task5\obj\Debug\net6.0\ref\Task5.dll
