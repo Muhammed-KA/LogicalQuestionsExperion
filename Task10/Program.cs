@@ -1,60 +1,61 @@
-﻿//10. Accept the 10 boarding pass numbers and allocate to a counter to check-in Qs. Each Q can accommodate max 3 people. Allocate randomly if the Q has space. Max three counters are there.
+﻿// Accept the 10 boarding pass numbers and allocate to a counter to check-in Qs. Each Q can accommodate max 3 people. Allocate randomly if the Q has space. Max three counters are there.
 
-int[] BoardingPassArray = new int[10];
-int[] CheckInArray1 = new int[3];
-int[] CheckInArray2 = new int[3];
-int[] CheckInArray3 = new int[3];
+Console.WriteLine( "Enter the boarding pass numbers:");
 
-Console.WriteLine("Enter Flight Boarding Number:-");
+string[] BoardingPass = new string[10];
 
 for (int i = 0; i < 10; i++)
-{
-    Console.Write($"Flight Boarding Number{i + 1}:-");
-    BoardingPassArray[i] = Convert.ToInt32(Console.ReadLine());
+    BoardingPass[i] = Console.ReadLine();
+
+Queue<string> CounterQueue1 = new Queue<string>(3);
+Queue<string> CounterQueue2 = new Queue<string>(3);
+Queue<string> CounterQueue3 = new Queue<string>(3);
+
+Random randomCounter = new Random();
+
+CounterQueue1.Enqueue(BoardingPass[0]);
+CounterQueue1.Enqueue(BoardingPass[3]);
+CounterQueue1.Enqueue(BoardingPass[6]);
+CounterQueue2.Enqueue(BoardingPass[1]);
+CounterQueue2.Enqueue(BoardingPass[4]);
+CounterQueue2.Enqueue(BoardingPass[7]);
+CounterQueue3.Enqueue(BoardingPass[2]);
+CounterQueue3.Enqueue(BoardingPass[5]);
+CounterQueue3.Enqueue(BoardingPass[8]);
+
+Console.WriteLine("Queues before first exit: ");
+Console.Write("Counter A: ");
+Console.WriteLine(string.Join("=>", CounterQueue1));
+Console.Write("Counter B: ");
+Console.WriteLine(string.Join("=>", CounterQueue2));
+Console.Write("Counter C: ");
+Console.WriteLine(string.Join("=>", CounterQueue3));
+
+int CounterNumber = randomCounter.Next(2);
+
+switch(CounterNumber)
+{    
+    case 0:
+        CounterQueue1.Dequeue();
+        CounterQueue1.Enqueue(BoardingPass[9]);
+        break;    
+    case 1:
+        CounterQueue2.Dequeue();
+        CounterQueue2.Enqueue(BoardingPass[9]);
+        break;
+    case 2:
+        CounterQueue3.Dequeue();
+        CounterQueue3.Enqueue(BoardingPass[9]);
+        break;
+    default:
+        Console.WriteLine("Error");
+        break;
 }
 
-int j = 0;
-int k = 0;
-int l = 0;
-
-for (int i = 0; i < 10; i++)
-{
-
-    if (i < 3)
-    {
-        if (j < 3)
-        {
-            CheckInArray1[j] = BoardingPassArray[i];
-            j++;
-        }
-
-    }
-    else if (i is >= 3 and < 6)
-    {
-        if (k < 3)
-        {
-            CheckInArray2[k] = BoardingPassArray[i];
-            k++;
-        }
-
-    }
-    else if (i >= 6 && i < 10)
-    {
-        if (l < 3)
-        {
-            CheckInArray3[l] = BoardingPassArray[i];
-            l++;
-        }
-
-
-    }
-
-
-}
-
-for (int i = 0; i < 3; i++)
-{
-    Console.WriteLine("Counter 1- {0}", CheckInArray1[i]);
-    Console.WriteLine("Counter 2- {0}", CheckInArray2[i]);
-    Console.WriteLine("Counter 3- {0}", CheckInArray3[i]);
-}
+Console.WriteLine("Queues after first exit: ");
+Console.Write("Counter A: ");
+Console.WriteLine(string.Join("=>", CounterQueue1));
+Console.Write("Counter B: ");
+Console.WriteLine(string.Join("=>", CounterQueue2));
+Console.Write("Counter C: ");
+Console.WriteLine(string.Join("=>", CounterQueue3));
